@@ -86,3 +86,5 @@ public class Sale {
 		this.seller = seller;
 	}
 }
+
+//Nícolas
