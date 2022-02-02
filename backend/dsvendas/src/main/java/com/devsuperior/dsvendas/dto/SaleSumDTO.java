@@ -5,17 +5,18 @@ import java.io.Serializable;
 import com.devsuperior.dsvendas.entities.Seller;
 
 public class SaleSumDTO implements Serializable {
-	private static final long serialVersionUID =1L;
+	private static  final long serialVersionUID = 1L;
+	
 	private String sellerName;
 	private Double sum;
 	
 	public SaleSumDTO() {
-	
 	}
-	
+
 	public SaleSumDTO(Seller seller, Double sum) {
-		sellerName = seller.getName();
-		sum = sum;
+		super();
+		this.sellerName = seller.getName();
+		this.sum = sum;
 	}
 
 	public String getSellerName() {
@@ -33,5 +34,6 @@ public class SaleSumDTO implements Serializable {
 	public void setSum(Double sum) {
 		this.sum = sum;
 	}
+	
 	
 }

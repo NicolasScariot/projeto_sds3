@@ -1,4 +1,5 @@
 package com.devsuperior.dsvendas.entities;
+
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
@@ -12,7 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tb_sales")
 public class Sale {
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -85,6 +86,6 @@ public class Sale {
 	public void setSeller(Seller seller) {
 		this.seller = seller;
 	}
+	
+	
 }
-
-//Nícolas Luís
